@@ -6,6 +6,9 @@ const linkOfImages="./image.json";
 // Part of sliders
 const swiper = new Swiper('.swiper-0', {
     loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
   navigation: {
     nextEl: '.swiper-button-next-0',
     prevEl: '.swiper-button-prev-0',
@@ -31,7 +34,7 @@ const swiper = new Swiper('.swiper-0', {
       },
       768: {
           slidesPerView: 3,
-          spaceBetween:10
+          spaceBetween:15
           
       },
       1024: {
