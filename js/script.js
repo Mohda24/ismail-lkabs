@@ -130,15 +130,20 @@ ArrayOfArticles.forEach((article,index)=>{
 });
 // Scroll header in small screen
 var lastscrollDown=0;
+let throttleTimer;
 window.addEventListener("scroll",function(){
   if(this.window.innerWidth<=767){
-    let currentScrollValue=this.window.pageYOffset || this.window.scrollY;
-    if(currentScrollValue<lastscrollDown){
-      header.style.top="-100px";
-    }else{
-      header.style.top="10px";
-    }
-    lastscrollDown=currentScrollValue;
+    if(throttleTimer) return;
+    throttleTimer = setTimeout(()=>{
+      let currentScrollValue=this.window.pageYOffset || this.window.scrollY;
+      if(currentScrollValue>lastscrollDown){
+        header.style.top="-100px";
+      }else{
+        header.style.top="10px";
+      }
+      lastscrollDown=currentScrollValue;
+      throttleTimer = null;
+    },100);
   }
 })
 
