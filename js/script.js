@@ -1,14 +1,15 @@
 // Part of Selectors
 const ArrayOfArticles=Array.from(document.querySelectorAll("#services article"));
-console.log(ArrayOfArticles);
+const header=document.querySelector(".headerContainer");
+
 
 const linkOfImages="./image.json";
 // Part of sliders
 const swiper = new Swiper('.swiper-0', {
     loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
   navigation: {
     nextEl: '.swiper-button-next-0',
     prevEl: '.swiper-button-prev-0',
@@ -127,11 +128,20 @@ async function addGalerie(index){
 ArrayOfArticles.forEach((article,index)=>{
   article.addEventListener("click",()=>addGalerie(index))
 });
-lightbox.option({
-  'resizeDuration': 200,
-      'wrapAround': true,
-  'alwaysShowNavOnTouchDevices':true,
+// Scroll header in small screen
+var lastscrollDown=0;
+window.addEventListener("scroll",function(){
+  if(this.window.innerWidth<=767){
+    let currentScrollValue=this.window.pageYOffset || this.window.scrollY;
+    if(currentScrollValue<lastscrollDown){
+      header.style.top="-100px";
+    }else{
+      header.style.top="10px";
+    }
+    lastscrollDown=currentScrollValue;
+  }
 })
+
 
 
   

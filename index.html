@@ -22,12 +22,12 @@
 </head>
 <body class="!scroll-smooth !bg-background-color 2xl:!w-[1400px] 2xl:!mx-auto !relative">
     <!-- Start Header -->
-    <div class="container px-[15px] absolute w-full z-20 top-0 left-0">
-        <header id="header" class="flex justify-between items-center px-[20px] py-[20px] relative z-20">
+    <div class="container duration-200 ease-in-out transition-all headerContainer px-[15px] sticky top-2 md:absolute w-full z-20 md:top-0 md:left-0">
+        <header id="header" class="flex justify-between bg-white md:bg-transparent rounded-[100px] md:rounded-none items-center p-[10px] md:px-[20px] md:py-[20px] relative z-20">
             <div class="logo">
-                <h1 class="first-letter:text-primary-color first-letter:uppercase text-[30px] font-bold text-white first-letter:font-lora">Igzmir</h1>
+                <h1 class="first-letter:text-primary-color first-letter:uppercase text-[30px] font-bold text-black md:text-white first-letter:font-lora">Igzmir</h1>
             </div>
-            <nav>
+            <nav class="hidden md:block">
                 <ul class="flex items-center gap-[20px] text-white uppercase">
                     <li class="font-semibold text-[16px] tracking-[1px] bg-[rgba(231,192,71,.3)] "><a href="" class="px-2">Home</a></li>
                     <li class="font-semibold text-[16px] tracking-[1px] relative before:absolute before:content-[''] before:h-full before:w-0 hover:before:w-full before:bg-[rgba(231,192,71,.3)] before:transition-all before:duration-200 before:ease-linear before:-z-1 z-20 "><a href="#services" class="px-2">Services</a></li>
@@ -36,14 +36,15 @@
                     <li class="font-semibold text-[16px] tracking-[1px] relative before:absolute before:content-[''] before:h-full before:w-0 hover:before:w-full before:bg-[rgba(231,192,71,.3)] before:transition-all before:duration-200 before:ease-linear before:-z-1 z-20 "><a href="" class="px-2">Contact</a></li>
                 </ul>
             </nav>
-            <div class="info flex items-center gap-[20px] text-white">
+            <div class="info items-center gap-[20px] text-white hidden lg:flex">
                 <p>0619213368</p>
                 <p>MohdaKing13@Gmail.com</p>
             </div>
+            <i class="fa-solid fa-bars md:!hidden text-black text-[25px]"></i>
         </header>
     </div>
     <!-- Slider main container -->
-    <div class="swiper swiper-0 swiper-hero-section w-full  h-[100vh]  2xl:h-[70vh]  max-h-[900px] fixed top-0 left-0 overflow-hidden">
+    <div class="swiper swiper-0 swiper-hero-section !hidden md:!block w-full  h-[100vh]  2xl:h-[70vh]  max-h-[900px] fixed top-0 left-0 overflow-hidden">
 
         <div class="swiper-wrapper w-full h-[100vh] bg-fixed">
 
@@ -52,7 +53,7 @@
                     <b   class="text-[20px] text-white font-roboto   transition-all duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora   transition-all duration-500 ease-out">NEW FUTURE</h2>
                     <p   class="text-white text-[30px] font-roboto   transition-all duration-500 ease-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque voluptate assumenda quia provident</p>
-                    <a href="" class="group mt-[30px] py-[12px] px-[25px] bg-primary-color block w-fit mx-auto rounded-md text-white font-roboto text-[18px] tracking-[1.5px] uppercase font-bold  transition-all duration-500 ease-out">Contact Us <i class="fa-solid fa-angles-right group-hover:translate-x-1 duration-200 ease-out transition-all"></i></a>
+                    <a href="" class="group mt-[30px] py-[12px] px-[25px] bg-primary-color block w-fit mx-auto rounded-md text-white font-roboto text-[18px] tracking-[1.5px] uppercase font-bold hover:!opacity-90 transition-all duration-500 ease-out">Contact Us <i class="fa-solid fa-angles-right group-hover:translate-x-1 duration-200 ease-out transition-all"></i></a>
                 </div>
             </div>
 
@@ -61,7 +62,7 @@
                     <b   class="text-[20px] text-white font-roboto opacity-0  transition-all duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora opacity-0  transition-all duration-500 ease-out">NEW FUTURE</h2>
                     <p   class="text-white text-[30px] font-roboto opacity-0  transition-all duration-500 ease-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque voluptate assumenda quia provident</p>
-                    <a href="" class="group mt-[30px] py-[12px] px-[25px] bg-primary-color block w-fit mx-auto rounded-md text-white font-roboto text-[18px] tracking-[1.5px] uppercase font-bold opacity-0 transition-all duration-500 ease-out">Contact Us <i class="fa-solid fa-angles-right group-hover:translate-x-1 duration-200 ease-out transition-all"></i></a>
+                    <a href="" class="group mt-[30px] py-[12px] px-[25px] bg-primary-color block w-fit mx-auto rounded-md text-white font-roboto text-[18px] tracking-[1.5px] uppercase font-bold opacity-0 transition-all duration-500 ease-out hover:!opacity-90">Contact Us <i class="fa-solid fa-angles-right group-hover:translate-x-1 duration-200 ease-out transition-all"></i></a>
                 </div>
 
             </div>
@@ -71,7 +72,7 @@
                     <b   class="text-[20px] text-white font-roboto opacity-0  transition-all duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora opacity-0  transition-all duration-500 ease-out">NEW FUTURE</h2>
                     <p   class="text-white text-[30px] font-roboto opacity-0  transition-all duration-500 ease-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque voluptate assumenda quia provident</p>
-                    <a href="" class="group mt-[30px] py-[12px] px-[25px] bg-primary-color block w-fit mx-auto rounded-md text-white font-roboto text-[18px] tracking-[1.5px] uppercase font-bold opacity-0 transition-all duration-500 ease-out">Contact Us <i class="fa-solid fa-angles-right group-hover:translate-x-1 duration-200 ease-out transition-all"></i></a>
+                    <a href="" class="group mt-[30px] py-[12px] px-[25px] bg-primary-color block w-fit mx-auto rounded-md text-white font-roboto text-[18px] tracking-[1.5px] uppercase font-bold opacity-0 transition-all duration-500 ease-out hover:!opacity-90">Contact Us <i class="fa-solid fa-angles-right group-hover:translate-x-1 duration-200 ease-out transition-all"></i></a>
                 </div>
 
             </div>
@@ -287,7 +288,7 @@
                     </form>
                 </div>
                 <div class="contact-location relative !h-[450px] w-[100%] lg:!w-[45%] rounded-md overflow-hidden">
-                    <iframe class="!h-full !w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.940517491241!2d-9.374034425705666!3d30.21024511069835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c2b46cd17a9b%3A0x7d1b9b3d7f761758!2sderb%20gnaoua%2C%20Biougra!5e0!3m2!1sen!2sma!4v1724520803793!5m2!1sen!2sma" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="!h-full !w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.940517491241!2d-9.374034425705666!3d30.21024511069835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c2b46cd17a9b%3A0x7d1b9b3d7f761758!2sderb%20gnaoua%2C%20Biougra!5e0!3m2!1sen!2sma!4v1724520803793!5m2!1sen!2sma" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
                     <div class="overlay absolute top-0 left-0 w-full h-full z-10 bg-[rgba(0,0,0,.45)] pointer-events-none"></div>
                 </div>
                 
@@ -312,7 +313,7 @@
                         <li class="text-[#868686] font-[14px]"><a href="">Contact</a></li>
                     </ul>
                 </div>
-                <div class="socialMedia px-[15px] w-full md:w-[50%] lg:w-auto lg:flex-1">
+                <div class="socialMedia lg:px-[15px] w-full md:w-[50%] lg:w-auto lg:flex-1">
                     <h6 class="  text-[24px] font-bold text-white  mb-[20px] ">Social Media</h6>
                 </div>
                 <div class="contact-info w-full md:w-[50%] lg:w-auto lg:flex-1 lg:ps-[15px]">
@@ -323,13 +324,13 @@
 
                 </div>
             </section>
-            <section class="copyrighyt flex justify-between items-center py-[20px] relative before:absolute before:content-[''] before:top-0 before:left-0 before:w-full before:!h-[0.06px] before:opacity-30 before:bg-[#868686]">
-                <h6 class="text-white text-[16px]">© 2024 Igzmir, All Rights Reserved</h6>
-                <div class="socialMedia-icons">
-                    <a href="" class="group"><i class="fa-brands fa-facebook text-white group-hover:text-[rgb(30,124,242)]"></i></a>
-                    <a href="" class="group"><i class="fa-brands fa-instagram text-white group-hover:text-[rgb(214,51,132)]"></i></a>
-                    <a href="" class="group"><i class="fa-brands fa-whatsapp text-white group-hover:text-[rgb(44,212,107)]"></i></a>
-                    <a href="" class="group"><i class="fa-solid fa-at text-white"></i></a>
+            <section class="copyrighyt flex flex-wrap justify-between items-center py-[20px] relative before:absolute before:content-[''] before:top-0 before:left-0 before:w-full before:!h-[0.06px] before:opacity-30 before:bg-[#868686]">
+                <h6 class="text-white text-[16px] w-full md:w-auto mb-[20px] md:mb-0">© 2024 Igzmir, All Rights Reserved</h6>
+                <div class="socialMedia-icons w-full md:w-auto">
+                    <a href="" class="group me-[10px]"><i class="fa-brands fa-facebook text-white group-hover:text-[rgb(30,124,242)] text-[20px] duration-200 transition-all ease-out"></i></a>
+                    <a href="" class="group me-[10px]" ><i class="fa-brands fa-instagram text-white group-hover:text-[rgb(214,51,132)] text-[20px] duration-200 transition-all ease-out"></i></a>
+                    <a href="" class="group me-[10px]"><i class="fa-brands fa-whatsapp text-white group-hover:text-[rgb(44,212,107)] text-[20px] duration-200 transition-all ease-out"></i></a>
+                    <a href="" class="group"><i class="fa-solid fa-at text-white text-[20px]"></i></a>
                 </div>
             </section>
         </div>
