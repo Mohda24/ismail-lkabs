@@ -135,7 +135,7 @@ window.addEventListener("scroll",function(){
       if(currentScrollValue>lastscrollDown){
         header.style.top="-100px";
       }else{
-        header.style.top="10px";
+        header.style.top="0px";
       }
       lastscrollDown=currentScrollValue;
       throttleTimer = null;
