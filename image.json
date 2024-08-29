@@ -1,47 +1,50 @@
 [
     {
         "images": [
-        "amstrong-1.webp",
-        "amstrong-2.webp",
-        "amstrong-3.webp",
-        "amstrong-4.webp",
-        "amstrong-5.webp"
+        "chambre1.webp",
+        "chambre2.webp",
+        "chambre3.webp",
+        "chambre4.webp",
+        "chambre5.webp"
         ]
     },
     {
 "images": [
-        "amstrong-1.webp",
-        "amstrong-2.webp",
-        "amstrong-3.webp",
-        "amstrong-4.webp",
-        "amstrong-5.webp"
+        "couloir-1.webp",
+        "couloir-2.webp",
+        "couloir-3.webp",
+        "couloir-4.webp",
+        "couloir-5.webp",
+        "couloir-6.webp"
         ]
     },
     {
 "images": [
-        "amstrong-1.webp",
-        "amstrong-2.webp",
-        "amstrong-3.webp",
-        "amstrong-4.webp",
-        "amstrong-5.webp"
+        "cuizine-1.webp",
+        "cuizine-2.webp",
+        "cuizine-3.webp",
+        "cuizine-4.webp",
+        "cuizine-5.webp"
         ]
     },
     {
 "images": [
-        "amstrong-1.webp",
-        "amstrong-2.webp",
-        "amstrong-3.webp",
-        "amstrong-4.webp",
-        "amstrong-5.webp"
+        "salon-1.webp",
+        "salon-2.webp",
+        "salon-3.webp",
+        "salon-4.webp",
+        "salon-5.webp",
+        "salon-6.webp",
+        "salon-7.webp"
         ]
     },
     {
 "images": [
-        "amstrong-1.webp",
-        "amstrong-2.webp",
-        "amstrong-3.webp",
-        "amstrong-4.webp",
-        "amstrong-5.webp"
+        "tv-1.webp",
+        "tv-2.webp",
+        "tv-3.webp",
+        "tv-4.webp",
+        "tv-5.webp"
         ]
     }
 ]
