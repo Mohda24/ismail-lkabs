@@ -1,6 +1,9 @@
 // Part of Selectors
 const ArrayOfArticles=Array.from(document.querySelectorAll("#services article"));
 const header=document.querySelector(".headerContainer");
+const menuBtn=document.querySelector(".menu");
+const mobileNavbar=document.getElementById("mobile-navBar");
+const mobileNavbarElements=document.querySelectorAll("#mobile-navBar li");
 
 
 const linkOfImages="./image.json";
@@ -89,11 +92,13 @@ const swiper = new Swiper('.swiper-0', {
     }, 350);
   });
 // Functions
+// save image in localStorage
 (async function getImages(){
   let response= await fetch(linkOfImages);
   const data= await response.json();
   localStorage.setItem("images",JSON.stringify(data))
 })()
+// add images to lightbox element
 async function addGalerie(index){
   if(!"images" in localStorage){
     await getImages();
@@ -114,15 +119,6 @@ async function addGalerie(index){
   lightboxContainer.querySelector("a").click()
 
   document.body.removeChild(lightboxContainer)
-
-
-
-  
-  
-
-  
-  
-
 }
 // part of advenlistner
 ArrayOfArticles.forEach((article,index)=>{
@@ -145,6 +141,15 @@ window.addEventListener("scroll",function(){
       throttleTimer = null;
     },100);
   }
+})
+// navBar
+menuBtn.addEventListener("click",function(){
+  mobileNavbar.classList.add("active");
+});
+mobileNavbarElements.forEach(li=>{
+  li.addEventListener("click",()=>{
+    mobileNavbar.classList.remove("active");
+  })
 })
 
 
