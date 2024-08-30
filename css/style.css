@@ -978,10 +978,6 @@ h1,h2,h3,h4,h5,h6{
   background-image: url('../images/h3-background-img.jpg');
 }
 
-.bg-\[url\(\'\.\.\/images\/mobile-home-hero\.webp\'\)\] {
-  background-image: url('../images/mobile-home-hero.webp');
-}
-
 .bg-\[url\(\'\.\.\/images\/slider1\.webp\'\)\] {
   background-image: url('../images/slider1.webp');
 }
@@ -1326,6 +1322,12 @@ h1,h2,h3,h4,h5,h6{
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
