@@ -9,19 +9,18 @@
     <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 
     <!-- link swipper -->
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
+    <link  rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <!-- link lightbox -->
     <link rel="stylesheet" href="css/lightbox.css" media="print" onload="this.media='all'">
     <!-- Link Font awesome -->
-    <link rel="stylesheet" href="css/all.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/fontawesome.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
 
     
     
 
 
 </head>
-<body class="!scroll-smooth !bg-background-color 2xl:!w-[1400px] 2xl:!mx-auto !relative">
+<body style="max-width: 1400px; margin: 0 auto; position: relative !important;" class="!bg-background-color">
     <!-- Start Header -->
     <div class="container duration-200 ease-in-out transition-all headerContainer px-[15px] sticky top-0 md:absolute w-full !z-[90] bg-white md:bg-transparent left-0">
         <header id="header" class="flex justify-between bg-white md:bg-transparent items-center p-[10px] md:px-[20px] md:py-[20px] relative z-20">
@@ -59,7 +58,7 @@
         <div class="swiper-wrapper w-full h-[100vh] bg-fixed">
 
             <div  style="display: flex; align-items: center; justify-content: center;" class="swiper-slide h-full w-full relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1  bg-[url('../images/slider1.webp')] bg-cover bg-fixed">
-                <div  class="info w-[80%] mx-auto text-center">
+                <div style="min-height: 200px; max-width: 1200px;margin: 0 auto; text-align: center; width:80%;"  class="info">
                     <b   class="text-[20px] text-white font-roboto   transition-all duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora   transition-all duration-500 ease-out">NEW FUTURE</h2>
                     <p   class="text-white text-[30px] font-roboto   transition-all duration-500 ease-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque voluptate assumenda quia provident</p>
@@ -68,7 +67,7 @@
             </div>
 
             <div style="display: flex; align-items: center; justify-content: center;" class="swiper-slide   bg-[url('../images/slider2.webp')] bg-cover h-[100vh] w-full relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1">
-                <div  class="info w-[80%] mx-auto text-center">
+                <div style="min-height: 200px; max-width: 1200px;margin: 0 auto; text-align: center; width:80%;"  class="info">
                     <b   class="text-[20px] text-white font-roboto opacity-0  transition-all duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora opacity-0  transition-all duration-500 ease-out">NEW FUTURE</h2>
                     <p   class="text-white text-[30px] font-roboto opacity-0  transition-all duration-500 ease-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque voluptate assumenda quia provident</p>
@@ -78,7 +77,7 @@
             </div>
 
             <div style="display: flex; align-items: center; justify-content: center;" class="swiper-slide   bg-[url('../images/slider3.webp')] bg-cover bg-fixed h-[100vh] w-full  relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1 ">
-                <div  class="info w-[80%] mx-auto text-center">
+                <div style="min-height: 200px; max-width: 1200px;margin: 0 auto; text-align: center; width:80%;" class="info">
                     <b   class="text-[20px] text-white font-roboto opacity-0  transition-all duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora opacity-0  transition-all duration-500 ease-out">NEW FUTURE</h2>
                     <p   class="text-white text-[30px] font-roboto opacity-0  transition-all duration-500 ease-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque voluptate assumenda quia provident</p>
@@ -96,7 +95,7 @@
         <div class="swiper-scrollbar"></div>
     </div>
     <!-- hero of mobile -->
-    <div class="hero-section-mobile flex items-center justify-center md:hidden relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1 z-20  bg-[url('../images/mobile-home-hero.webp')] bg-cover !h-[calc(100vh-65px)] ">
+    <div style="background: url('./images/mobile-home-hero.webp'); background-size: cover;" class="hero-section-mobile flex items-center justify-center md:hidden relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1 z-20 !h-[calc(100vh-65px)] ">
         <div  class="info w-[80%] mx-auto text-center">
             <b   class="text-[20px] text-white font-roboto   transition-all duration-500 ease-out mb-3">Welcome 😁🎉😁</b>
             <h2   class="text-[45px] font-medium text-white font-lora   transition-all duration-500 ease-out mb-3">NEW FUTURE</h2>
@@ -108,7 +107,7 @@
 
     <!-- end hero of mobile -->
     <!-- End Hero Section -->
-    <main class="">
+    <main style="min-height: 100vh; width: 100%;">
         <section id="services" class="pt-[140px] pb-[200px] bg-[url('../images/h3-background-img.jpg')] bg-cover bg-top">
             <div class="container text-center px-[15px] mb-[20px]">
                 <b class=" text-primary-color mb-2 mx-auto">Our Services</b>
@@ -119,7 +118,7 @@
                     <div class="cards-content swiper-wrapper">
                         <article class="group !relative !w-full md:!w-[32%] lg:!w-[23%] !h-[400px] !before:content-['']
                         before:!h-full before:!absolute  before:!bg-[#00000052] before:z-20 before:w-full hover:before:opacity-100 hover:shadow-box-shadow overflow-hidden cursor-pointer  swiper-slide">
-                            <img src="./images/h3-property-f-img-1.jpg" class="absolute w-full h-full object-cover !bg-center border-4 border-primary-color border-solid" alt="">
+                            <img style="width: 100%;height:100%;" src="./images/h3-property-f-img-1.webp" class="absolute w-full h-full object-cover !bg-center border-4 border-primary-color border-solid" alt="">
                             <div class="info absolute !z-45 p-[20px] text-center bottom-0 group-hover:translate-y-[-10px] duration-200  ease-linear transition-all ">
                                 <b class="text-primary-color text-[20px] mb-2">Plâtrier</b>
                                 <h3 class="text-white font-roboto text-[25px] mb-3 capitalize">chambre</h3>
@@ -130,7 +129,7 @@
                         </article>
                         <article class="group !relative !w-full md:!w-[32%] lg:!w-[23%] !h-[400px] !before:content-['']
                         before:!h-full before:!absolute  before:!bg-[#00000052] before:z-20 before:w-full hover:before:opacity-100 hover:shadow-box-shadow overflow-hidden cursor-pointer  swiper-slide">
-                            <img src="./images/h3-property-f-img-2.jpg" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="">
+                            <img style="width: 100%;height:100%;" src="./images/h3-property-f-img-2.webp" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="">
                             <div class="info absolute !z-45 p-[20px] text-center bottom-0 group-hover:translate-y-[-10px] duration-200  ease-linear transition-all ">
                                 <b class="text-primary-color text-[20px] mb-2">Plâtrier</b>
                                 <h3 class="text-white font-roboto text-[25px] mb-3 capitalize">Le couloir</h3>
@@ -141,7 +140,7 @@
                         </article>
                         <article class="group !relative !w-full md:!w-[32%] lg:!w-[23%] !h-[400px] !before:content-['']
                         before:!h-full before:!absolute  before:!bg-[#00000052] before:z-20 before:w-full hover:before:opacity-100 hover:shadow-box-shadow overflow-hidden cursor-pointer  swiper-slide">
-                            <img src="./images/h3-property-f-img-3.jpg" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="">
+                            <img style="width: 100%;height:100%;" src="./images/h3-property-f-img-3.webp" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="">
                             <div class="info absolute !z-45 p-[20px] text-center bottom-0 group-hover:translate-y-[-10px] duration-200  ease-linear transition-all ">
                                 <b class="text-primary-color text-[20px] mb-2">Plâtrier</b>
                                 <h3 class="text-white font-roboto text-[25px] mb-3 capitalize">cuizine</h3>
@@ -151,7 +150,7 @@
                         </article>
                         <article class="group !relative !w-full md:!w-[32%] lg:!w-[23%] !h-[400px] !before:content-['']
                         before:!h-full before:!absolute  before:!bg-[#00000052] before:z-20 before:w-full hover:before:opacity-100 hover:shadow-box-shadow overflow-hidden cursor-pointer  swiper-slide">
-                            <img src="./images/h3-property-f-img-4.jpg" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="">
+                            <img style="width: 100%;height:100%;" src="./images/h3-property-f-img-4.webp" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="">
                             <div class="info absolute !z-45 p-[20px] text-center bottom-0 group-hover:translate-y-[-10px] duration-200  ease-linear transition-all ">
                                 <b class="text-primary-color text-[20px] mb-2">Plâtrier</b>
                                 <h3 class="text-white font-roboto text-[25px] mb-3 capitalize">un salon</h3>
@@ -161,7 +160,7 @@
                         </article>
                         <article class="group !relative !w-full md:!w-[32%] lg:!w-[23%] !h-[400px] before:w-full !before:content-['']
                         before:!h-full before:!absolute  before:!bg-[#00000052] before:z-20 hover:before:opacity-100 hover:shadow-box-shadow overflow-hidden cursor-pointer  swiper-slide">
-                            <img src="./images/h3-property-f-img-5.jpg" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="image for card">
+                            <img style="width: 100%;height:100%;" src="./images/h3-property-f-img-5.webp" class="absolute w-full h-full object-cover border-4 border-primary-color border-solid " alt="image for card">
                             <div class="info absolute !z-45 p-[20px] text-center bottom-0 group-hover:translate-y-[-10px] duration-200  ease-linear transition-all ">
                                 <b class="text-primary-color text-[20px] mb-2">Plâtrier</b>
                                 <h3 class="text-white font-roboto text-[25px] mb-3 capitalize">lieu de télévision</h3>
@@ -176,10 +175,10 @@
                         <div class="swiper-pagination swiper-pagination-1 !bottom-[-100px] !absolute"></div>
 
                     <div class="swiper-button-prev swiper-button-prev-1 after:hidden hover:translate-x-[-5px] transition-all duration-300 ease-linear md:!left-[-50px] lg:!left-[10px] ">
-                        <img src="images/arrows_left.png" alt="Arrow left">
+                        <img width="27" height="36" src="images/arrows_left.png" alt="Arrow left">
                     </div>
                     <div class="swiper-button-next swiper-button-next-1 after:hidden  hover:translate-x-[5px] transition-all duration-300 ease-linear md:!right-[-50px] lg:!right-[10px] ">
-                        <img src="images/arrows_right.png" alt="Arrow right">
+                        <img width="27" height="36" src="images/arrows_right.png" alt="Arrow right">
                     </div>
             </div>
 
@@ -242,19 +241,19 @@
                 </div>
                 <div class="Features-container flex flex-wrap md:justify-between">
                     <div class="group features-content text-center px-[24px] pt-[18px] pb-[34px] hover:bg-[#1a1b19] hover:translate-y-[-7px] hover:shadow-feature-shadow duration-200 ease-out w-[100%] md:w-[48%] lg:w-[23%] mb-[20px] md:mb-0">
-                        <img src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
+                        <img style="object-fit: cover;" src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
                         <h5 class="text-[24px] font-[700] text-white mt-[20px] mb-[10px] font-lora">Luxury Appliances</h5>
                         <p class="text-[#7b7b7b] text-[16px] mb-[20px]">Lorem ipsum proin vel velit auctor aliolli citudin</p>
 
                     </div>
                     <div class="group features-content text-center px-[24px] pt-[18px] pb-[34px] hover:bg-[#1a1b19] hover:translate-y-[-7px] hover:shadow-feature-shadow duration-200 ease-out w-[100%] md:w-[48%] lg:w-[23%] mb-[20px] md:mb-0">
-                        <img src="./images/cash-payment.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
+                        <img style="object-fit: cover;" src="./images/cash-payment.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
                         <h5 class="text-[24px] font-[700] text-white mt-[20px] mb-[10px] font-lora">Luxury Appliances</h5>
                         <p class="text-[#7b7b7b] text-[16px] mb-[20px]">Lorem ipsum proin vel velit auctor aliolli citudin</p>
 
                     </div>
                     <div class="group features-content text-center px-[24px] pt-[18px] pb-[34px] hover:bg-[#1a1b19] hover:translate-y-[-7px] hover:shadow-feature-shadow duration-200 ease-out w-[100%] md:w-[48%] lg:w-[23%] md:mt-[20px] lg:mt-0 mb-[20px] md:mb-0">
-                        <img src="./images/consulting.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
+                        <img style="object-fit: cover;" src="./images/consulting.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
                         <h5 class="text-[24px] font-[700] text-white mt-[20px] mb-[10px] font-lora">Luxury Appliances</h5>
                         <p class="text-[#7b7b7b] text-[16px] mb-[20px]">Lorem ipsum proin vel velit auctor aliolli citudin</p>
 
@@ -266,25 +265,25 @@
 
                     </div>
                     <div class="group features-content text-center px-[24px] pt-[18px] pb-[34px] hover:bg-[#1a1b19] hover:translate-y-[-7px] hover:shadow-feature-shadow duration-200 ease-out w-[100%] md:w-[48%] lg:w-[23%] md:mt-[20px] mb-[20px] md:mb-0">
-                        <img src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
+                        <img style="object-fit: cover;" src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
                         <h5 class="text-[24px] font-[700] text-white mt-[20px] mb-[10px] font-lora">Luxury Appliances</h5>
                         <p class="text-[#7b7b7b] text-[16px] mb-[20px]">Lorem ipsum proin vel velit auctor aliolli citudin</p>
 
                     </div>
                     <div class="group features-content text-center px-[24px] pt-[18px] pb-[34px] hover:bg-[#1a1b19] hover:translate-y-[-7px] hover:shadow-feature-shadow duration-200 ease-out w-[100%] md:w-[48%] lg:w-[23%] md:mt-[20px] mb-[20px] md:mb-0">
-                        <img src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
+                        <img style="object-fit: cover;" src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
                         <h5 class="text-[24px] font-[700] text-white mt-[20px] mb-[10px] font-lora">Luxury Appliances</h5>
                         <p class="text-[#7b7b7b] text-[16px] mb-[20px]">Lorem ipsum proin vel velit auctor aliolli citudin</p>
 
                     </div>
                     <div class="group features-content text-center px-[24px] pt-[18px] pb-[34px] hover:bg-[#1a1b19] hover:translate-y-[-7px] hover:shadow-feature-shadow duration-200 ease-out w-[100%] md:w-[48%] lg:w-[23%] md:mt-[20px] mb-[20px] md:mb-0">
-                        <img src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
+                        <img style="object-fit: cover;" src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
                         <h5 class="text-[24px] font-[700] text-white mt-[20px] mb-[10px] font-lora">Luxury Appliances</h5>
                         <p class="text-[#7b7b7b] text-[16px] mb-[20px]">Lorem ipsum proin vel velit auctor aliolli citudin</p>
 
                     </div>
                     <div class="group features-content text-center px-[24px] pt-[18px] pb-[34px] hover:bg-[#1a1b19] hover:translate-y-[-7px] hover:shadow-feature-shadow duration-200 ease-out w-[100%] md:w-[48%] lg:w-[23%] md:mt-[20px]">
-                        <img src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out " alt="" loading="lazy">
+                        <img style="object-fit: cover;" src="./images/running.svg" class="w-[90px] h-[80px] mx-auto group-hover:scale-[1.02] duration-200 ease-out" alt="" loading="lazy">
                         <h5 class="text-[24px] font-[700] text-white mt-[20px] mb-[10px] font-lora">Luxury Appliances</h5>
                         <p class="text-[#7b7b7b] text-[16px] mb-[20px]">Lorem ipsum proin vel velit auctor aliolli citudin</p>
 
@@ -362,8 +361,8 @@
 
 
 
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script async src="js/script.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
     <script defer src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
