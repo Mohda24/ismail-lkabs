@@ -1900,9 +1900,3 @@ article::before{
     text-align: start;
   }
 }
-
-@media (min-width: 1536px) {
-  .\32xl\:h-\[70vh\] {
-    height: 70vh;
-  }
-}

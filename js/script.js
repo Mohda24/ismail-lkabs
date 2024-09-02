@@ -151,6 +151,19 @@ mobileNavbarElements.forEach(li=>{
     mobileNavbar.classList.remove("active");
   })
 })
+// Lightbox param
+document.addEventListener("DOMContentLoaded",()=>{
+  if(typeof lightbox!=="undefined"){
+    lightbox.option({
+      'alwaysShowNavOnTouchDevices': true,
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling': true,
+      
+      "fitImagesInViewport" : true,
+                              })
+  }
+})
 
 
 
