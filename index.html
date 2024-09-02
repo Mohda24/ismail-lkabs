@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Style css file -->
-    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <!-- <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    <!-- <noscript><link rel="stylesheet" href="css/style.css"></noscript> -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- link swipper -->
     <link  rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
@@ -57,7 +58,8 @@
 
         <div class="swiper-wrapper w-full h-[100vh] bg-fixed">
 
-            <div  style="display: flex; align-items: center; justify-content: center;" class="swiper-slide h-full w-full relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1  bg-[url('../images/slider1.webp')] bg-cover bg-fixed">
+            <div  style="display: flex; align-items: center; justify-content: center;" class="swiper-slide h-full w-full relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1">
+                <img style="z-index: -2;" loading="lazy" src="./images/slider1.webp" alt="background for kabs" class="absolute w-full h-full object-cover">
                 <div style="min-height: 200px; max-width: 1200px;margin: 0 auto; text-align: center; width:80%;"  class="info">
                     <b   class="text-[20px] text-white font-roboto   transition-opacity duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora   transition-opacity duration-500 ease-out">NEW FUTURE</h2>
@@ -66,7 +68,8 @@
                 </div>
             </div>
 
-            <div style="display: flex; align-items: center; justify-content: center;" class="swiper-slide   bg-[url('../images/slider2.webp')] bg-cover h-[100vh] w-full relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1">
+            <div style="display: flex; align-items: center; justify-content: center;" class="swiper-slide    h-[100vh] w-full relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1">
+                <img style="z-index: -2;" loading="lazy" src="./images/slider2.webp" alt="background for kabs" class="absolute w-full h-full object-cover">
                 <div style="min-height: 200px; max-width: 1200px;margin: 0 auto; text-align: center; width:80%;"  class="info">
                     <b   class="text-[20px] text-white font-roboto opacity-0  transition-opacity duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora opacity-0  transition-opacity duration-500 ease-out">NEW FUTURE</h2>
@@ -76,7 +79,8 @@
 
             </div>
 
-            <div style="display: flex; align-items: center; justify-content: center;" class="swiper-slide   bg-[url('../images/slider3.webp')] bg-cover bg-fixed h-[100vh] w-full  relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1 ">
+            <div style="display: flex; align-items: center; justify-content: center;" class="swiper-slide    h-[100vh] w-full  relative after:absolute after:content-[''] after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.4)] after:-z-1 ">
+                <img style="z-index: -2;" loading="lazy" src="./images/slider3.webp" alt="background for kabs" class="absolute w-full h-full object-cover">
                 <div style="min-height: 200px; max-width: 1200px;margin: 0 auto; text-align: center; width:80%;" class="info">
                     <b   class="text-[20px] text-white font-roboto opacity-0  transition-opacity duration-500 ease-out">Welcome 😁🎉😁</b>
                     <h2   class="text-[120px] font-medium text-white font-lora opacity-0  transition-opacity duration-500 ease-out">NEW FUTURE</h2>
